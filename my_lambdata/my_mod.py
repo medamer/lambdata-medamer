@@ -1,12 +1,8 @@
 # Import libraries:
 import pandas as pd
 #from scikit-learn.model_selection import train_test_split
-"""
-# function to clean te dataset:
-def test(x):
-    print(x*10)
 
-"""
+# function to clean te dataset:
 def profile(df):
     # Check and print missing values:
     nans = df.isnull().sum()
@@ -26,3 +22,11 @@ def profile(df):
     #print('Test shape      : ', test.shape)
     print('\n')
     print(df.head())
+
+
+"""
+
+def test(x):
+    print(x*10)
+
+"""
