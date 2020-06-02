@@ -1,9 +1,12 @@
 # Import libraries:
 import pandas as pd
 #from scikit-learn.model_selection import train_test_split
-
+"""
 # function to clean te dataset:
+def test(x):
+    print(x*10)
 
+"""
 def profile(df):
     # Check and print missing values:
     nans = df.isnull().sum()
