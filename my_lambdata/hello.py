@@ -1,13 +1,10 @@
 
 
-from my_lambdata.my_mod import profile
+from my_lambdata.my_mod import Data
 import pandas as pd
 
-#df = pd.DataFrame({"state": ["CT", "CO", "CA", "TX"]}, {"NBR": [10,5,4,9]})
+df = pd.read_csv('https://raw.githubusercontent.com/medamer/Datasets/master/oasis_longitudinal.csv')
 
-#print(profile(df))
-#print(test(5))
+data = Data()
 
-#print('hello')
-
-print(100*5)
+print(data.profile(df))

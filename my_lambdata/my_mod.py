@@ -1,6 +1,6 @@
 # Import libraries:
 import pandas as pd
-from scikit-learn.model_selection import train_test_split
+from sklearn.model_selection import train_test_split
 
 
 class Data:
