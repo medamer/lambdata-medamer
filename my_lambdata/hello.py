@@ -2,9 +2,14 @@
 
 from my_lambdata.my_mod import Data
 import pandas as pd
+import numpy as np
 
-df = pd.read_csv('https://raw.githubusercontent.com/medamer/Datasets/master/oasis_longitudinal.csv')
 
-data = Data()
+df= pd.DataFrame(np.random.randn(5, 4), columns=list('ABCD'))
 
-print(data.profile(df))
+profile = Data.profile
+split = Data.split
+
+print(profile(df))
+
+print(split(df))

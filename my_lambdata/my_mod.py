@@ -15,12 +15,12 @@ class Data:
         nans = pd.DataFrame(nans, columns=['NaNs'])
 
         # Check and print missing values:
-        print('Missing Values : \n', nans)
+        print('Missing Values :', '\n', nans)
 
         # Describe dataset:
 
         print('\n')
-        print('Describe dataset : \n', df.describe().T)
+        print('Describe dataset :', '\n', df.describe().T)
 
     def split(df):
         # Make the train/test split:
@@ -29,14 +29,13 @@ class Data:
         Function split the dataframe into train, validation and test.
         """
         train, test = train_test_split(
-                                        df, test_size=0.2,
-                                        stratify=df['Group'],
+                                        df, train_size=0.8,
+                                        test_size=0.2,
                                         random_state=42
                                         )
         train, validation = train_test_split(
                                                 train, train_size=0.8,
                                                 test_size=0.2,
-                                                stratify=train['Group'],
                                                 random_state=42
                                                 )
         print('\n')
