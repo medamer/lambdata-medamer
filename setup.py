@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
-    name="lambdatamedamer", # the name that you will install via pip
+    name="lambdataedamer", # the name that you will install via pip
     version="1.1",
     author="mohamed edamer",
     author_email="edamer.mo@gmail.com",
