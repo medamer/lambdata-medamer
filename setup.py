@@ -7,7 +7,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="lambdatamedamer", # the name that you will install via pip
-    version="1.2",
+    version="2.0",
     author="mohamed edamer",
     author_email="edamer.mo@gmail.com",
     description="not now, just testing",
