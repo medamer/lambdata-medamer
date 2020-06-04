@@ -1,4 +1,4 @@
-# lambdata-medamer guid:
+# lambdatamedamer guid:
 
 ## installation:
 step 1: .....
